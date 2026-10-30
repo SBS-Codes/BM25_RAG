@@ -140,7 +140,7 @@ Each LangChain `Document` contains `page_content` and metadata such as its sourc
 
 The retriever ranks the chunks and is configured with `k=5`, meaning it returns at most five results. The tool formats the result using each chunk's text. Although source metadata is attached to the documents, the tool does not include those labels in its returned text.
 
-### Agent and tool use
+### Agent and tool use 
 
 `CodeAgent` is the orchestration layer. It receives a task, can decide to call its registered tool, and uses the tool's return value while preparing its answer. The retriever itself does not generate an answer; it only returns matching text.
 
